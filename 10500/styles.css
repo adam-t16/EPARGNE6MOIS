@@ -1,0 +1,98 @@
+/* Styles généraux */
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Conteneur du tableau */
+#table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 90%;  /* Réduit la taille du tableau */
+    overflow-x: auto; /* Permet le défilement horizontal */
+}
+
+/* Tableau stylisé */
+table {
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Tableau plus compact */
+    max-width: 1200px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px; /* Réduit l'espacement des cellules */
+    text-align: center;
+    font-size: 0.9rem; /* Réduit la taille du texte */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Couleur de l'en-tête */
+th {
+    background: #4facfe;
+    color: #fff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Alternance des lignes */
+tr:nth-child(odd) td {
+    background: #f7f9fc;
+}
+
+tr:nth-child(even) td {
+    background: #eef3f8;
+}
+
+/* Style des cellules au survol */
+td:hover {
+    background: #dff6ff;
+    transform: scale(1.02);
+}
+
+/* Style des cases à cocher */
+td label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #000; /* Nombre en noir */
+}
+
+td input[type="checkbox"] {
+    transform: scale(1.5);
+    cursor: pointer;
+    accent-color: #4facfe;
+}
+
+/* Effet sur les cases cochées */
+td input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: #4facfe;
+    font-weight: bold;
+}
+
+/* Conteneur du total */
+#total-container {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
