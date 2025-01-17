@@ -95,4 +95,58 @@ td input[type="checkbox"]:checked + span {
     color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
+} 
+/* Media query pour les écrans de moins de 1024px */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    #table-container {
+        width: 95%; /* Augmente la largeur du tableau pour mieux occuper l'espace */
+    }
+}
+
+/* Media query pour les écrans de moins de 768px */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    th, td {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    table {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* Media query pour les écrans de moins de 480px */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    th, td {
+        font-size: 0.7rem;
+        padding: 4px;
+    }
+
+    #table-container {
+        width: 100%; /* Prend toute la largeur */
+    }
+
+    table {
+        font-size: 0.7rem;
+    }
 }
